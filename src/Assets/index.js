@@ -1,0 +1,5 @@
+export { default as ProfileIcon } from "./ProfileIcon"
+export { default as ShopIcon } from "./ShopIcon"
+export { default as FormationIcon } from "./FormationIcon"
+export { default as BattleIcon } from "./BattleIcon"
+export { default as SettingsIcon } from "./SettingsIcon"

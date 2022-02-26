@@ -1,0 +1,19 @@
+.input-component {
+  appearance: none;
+  outline: none;
+  border: none;
+
+  height: 50px;
+  width: 450px;
+  border-radius: 30px;
+  padding: 0 30px;
+
+  background: #1f1d36;
+  font-size: 18px;
+  font-family: Righteous;
+  color: #ffffff;
+
+  &::placeholder {
+    color: #ffffff;
+  }
+}

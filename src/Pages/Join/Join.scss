@@ -1,0 +1,22 @@
+.join-page {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  .card-component {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 30px;
+
+    .button-component {
+      flex: 1;
+      height: 50px;
+      font-size: 18px;
+    }
+  }
+}
