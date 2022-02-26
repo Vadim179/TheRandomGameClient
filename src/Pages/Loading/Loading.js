@@ -13,7 +13,7 @@ function LoadingPage() {
 
   return (
     <div className={c}>
-      <Animation className={`${c}__spinner`} animation="rubberBand" infinite />
+      <Animation className={`${c}__spinner`} animation="flip" infinite />
     </div>
   )
 }
