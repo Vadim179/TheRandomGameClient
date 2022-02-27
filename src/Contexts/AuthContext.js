@@ -13,10 +13,10 @@ export function AuthProvider({ children }) {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    AuthAPI.me()
-      .then((response) => setUser(response.data))
-      .catch((error) => console.error(error.response.data))
-      .finally(() => setLoading(false))
+    // AuthAPI.me()
+    //   .then((response) => setUser(response.data))
+    //   .catch((error) => console.error(error.response.data))
+    //   .finally(() => setLoading(false))
   }, [])
 
   /**

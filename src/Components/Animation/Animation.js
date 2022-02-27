@@ -3,9 +3,8 @@ import classnames from "classnames"
 import "./Animation.scss"
 
 function Animation({ animation, className, children, infinite = false, ...props }) {
-  let animationClass = "animate__animated"
-  animationClass += ` animate__${animation}`
-  animationClass += ` ${infinite ? "animate__infinite" : ""}`
+  const infiniteClass = infinite ? "animate__infinite" : ""
+  const animationClass = `animate__animated animate__${animation} ${infiniteClass}`
   const classes = classnames(className, animationClass)
 
   return (

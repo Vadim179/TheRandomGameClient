@@ -1,3 +1,6 @@
+export { default as Page } from "./Page"
+export { default as PageNavigator } from "./PageNavigator"
+
 export { default as Button } from "./Button/Button"
 export { default as Card } from "./Card/Card"
 export { default as Input } from "./Input/Input"

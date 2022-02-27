@@ -1,7 +1,7 @@
-import { LoadingPage } from "Pages"
+import { PublicPages } from "Pages"
 
 function App() {
-  return <LoadingPage />
+  return <PublicPages />
 }
 
 export default App
