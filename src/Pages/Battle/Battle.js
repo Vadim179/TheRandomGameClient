@@ -1,7 +1,7 @@
 import "./Battle.scss"
 
 function BattlePage() {
-  return null
+  return "BattlePage"
 }
 
 export default BattlePage

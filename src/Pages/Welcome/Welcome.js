@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import { Title, Button, Animation } from "Components"
 import { NavigationUtility } from "Utilities"
-import { PublicPagesEnum } from "Enums"
+import { PublicPagesEnum, NavigatorsEnum } from "Enums"
 import "./Welcome.scss"
 
 function WelcomePage() {
@@ -12,7 +12,7 @@ function WelcomePage() {
     setAnim("fadeOutDown")
 
     setTimeout(() => {
-      NavigationUtility.doNavigate(PublicPagesEnum.Join)
+      NavigationUtility.doNavigate(NavigatorsEnum.PublicPages, PublicPagesEnum.Join)
     }, 1000)
   }
 

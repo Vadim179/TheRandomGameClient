@@ -1,21 +1,23 @@
-import { useState, useEffect, Children } from "react"
+import { useEffect, Children } from "react"
 import $ from "jquery"
 
-function PageNavigator({ page, children }) {
-  const [pageID, setPageID] = useState(page)
+function PageNavigator({ ID, pageID, children, onChangePageID }) {
+  const NAVIGATION_LISTENER_KEY = ID + ":Navigation"
+  const childrenArray = Children.toArray(children)
 
   function handleNavigation(_, pageID) {
-    setPageID(pageID)
+    if (childrenArray.some((page) => page.props.name === pageID)) {
+      onChangePageID(pageID)
+    }
   }
 
   useEffect(() => {
-    $(window).on("navigation", handleNavigation)
-    return () => $(window).off("navigation", handleNavigation)
+    $(window).on(NAVIGATION_LISTENER_KEY, handleNavigation)
+    return () => $(window).off(NAVIGATION_LISTENER_KEY, handleNavigation)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  return (
-    Children.toArray(children).find((page) => page.props.name === pageID) || null
-  )
+  return childrenArray.find((page) => page.props.name === pageID)
 }
 
 export default PageNavigator

@@ -1,7 +1,7 @@
 import "./Profile.scss"
 
 function ProfilePage() {
-  return null
+  return "ProfilePage"
 }
 
 export default ProfilePage

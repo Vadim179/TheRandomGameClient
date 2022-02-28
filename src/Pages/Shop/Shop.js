@@ -1,7 +1,7 @@
 import "./Shop.scss"
 
 function ShopPage() {
-  return null
+  return "ShopPage"
 }
 
 export default ShopPage

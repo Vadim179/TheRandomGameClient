@@ -1,13 +1,20 @@
+import { useState } from "react"
 import { Page, PageNavigator } from "Components"
-import { PublicPagesEnum } from "Enums"
+import { PublicPagesEnum, NavigatorsEnum } from "Enums"
 
 import WelcomePage from "./Welcome/Welcome"
 import JoinPage from "./Join/Join"
 import PrivatePages from "./PrivatePages"
 
 function PublicPages() {
+  const [pageID, setPageID] = useState(PublicPagesEnum.PrivatePages)
+
   return (
-    <PageNavigator page={PublicPagesEnum.Welcome}>
+    <PageNavigator
+      ID={NavigatorsEnum.PublicPages}
+      pageID={pageID}
+      onChangePageID={setPageID}
+    >
       <Page name={PublicPagesEnum.Welcome} component={WelcomePage} />
       <Page name={PublicPagesEnum.Join} component={JoinPage} />
       <Page name={PublicPagesEnum.PrivatePages} component={PrivatePages} />

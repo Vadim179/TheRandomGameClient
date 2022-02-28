@@ -1,7 +1,7 @@
 import "./Formation.scss"
 
 function FormationPage() {
-  return null
+  return "FormationPage"
 }
 
 export default FormationPage
