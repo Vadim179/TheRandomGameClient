@@ -2,7 +2,7 @@ import validate from "aproba"
 import classnames from "classnames"
 
 import { SidebarRoutes } from "./SidebarRoutes"
-import { Icon, Animation } from "Components"
+import { Icon } from "Components"
 import { NavigationUtility } from "Utilities"
 import { NavigatorsEnum } from "Enums"
 import "./TheSidebar.scss"
@@ -19,7 +19,7 @@ function TheSidebar({ activePageID }) {
   }
 
   return (
-    <Animation animation="bounceInLeft" className={c}>
+    <div className={c}>
       {SidebarRoutes.map(({ name, icon, pageID }) => {
         const _c = `${c}__route`
 
@@ -37,7 +37,7 @@ function TheSidebar({ activePageID }) {
           </div>
         )
       })}
-    </Animation>
+    </div>
   )
 }
 

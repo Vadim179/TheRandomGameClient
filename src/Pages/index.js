@@ -1,1 +1,11 @@
+export { default as MatchMakerPage } from "./MatchMaker/MatchMaker"
+export { default as FormationPage } from "./Formation/Formation"
+export { default as JoinPage } from "./Join/Join"
+export { default as LoadingPage } from "./Loading/Loading"
+export { default as ProfilePage } from "./Profile/Profile"
+export { default as SettingsPage } from "./Settings/Settings"
+export { default as ShopPage } from "./Shop/Shop"
+export { default as WelcomePage } from "./Welcome/Welcome"
+
+export { default as PrivatePages } from "./PrivatePages"
 export { default as PublicPages } from "./PublicPages"

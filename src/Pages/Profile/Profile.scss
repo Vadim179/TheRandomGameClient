@@ -1,0 +1,42 @@
+.profile-page {
+  width: 550px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__actions {
+    height: 80px;
+    display: flex;
+    gap: 30px;
+
+    &-claim-daily-reward,
+    &-watch-ad {
+      flex: 1;
+      border-radius: 30px;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+
+    &-claim-daily-reward {
+      background: #ffab73;
+
+      &:hover {
+        background: #ffd384;
+      }
+    }
+
+    &-watch-ad {
+      background: #35858b;
+
+      &:hover {
+        background: #4fbdba;
+      }
+    }
+  }
+}

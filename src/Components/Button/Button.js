@@ -1,9 +1,9 @@
 import classnames from "classnames"
 import "./Button.scss"
 
-function Button({ active, children, ...props }) {
+function Button({ active, className, children, ...props }) {
   const c = "button-component"
-  const classes = classnames(c, {
+  const classes = classnames(c, className, {
     [`${c}--active`]: active,
   })
 
